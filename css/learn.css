@@ -1,0 +1,410 @@
+:root {
+  --primary-color: #6A9AF7;
+  --secondary-color: #ffffff;
+}
+
+* {
+  /* border: 1px red solid; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Spline Sans", Arial, Helvetica, sans-serif;
+  /* font-family: 'Inter', sans-serif; */
+}
+
+
+/* HEADER */
+.nav-bar {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 20px 260px;
+  z-index: 999;
+  background-color: var(--secondary-color);
+  border-bottom: 3px rgba(0, 0, 0, 0.1) solid;
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  padding-left: 30px;
+}
+
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-weight: 100;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.close-menu {
+  top: 5%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+#check {
+  display: none;
+}
+
+.logo img {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+}
+
+.nav-bar-btn {
+  display: flex;
+}
+
+.nav-bar-btn button {
+  height: 35px;
+  width: 90px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.login button {
+  border: 2px solid var(--primary-color);
+  background-color: #ffffff;
+  color: var(--primary-color);
+}
+
+.login button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+
+}
+
+.register button {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.register button:hover {
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+
+}
+
+/* HEADER END */
+
+
+/* FEATURES */
+
+.features {
+  margin: 0px 200px;
+  padding-top: 160px;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.features-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.features-list button {
+  background-color: var(--secondary-color);
+  border: none;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+
+.features-list button:hover {
+  border-radius: 5px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+/* MENTOR */
+
+
+/* MENTORS LIST */
+.mentor-list-container {
+  padding: 0px 260px;
+}
+
+/* MENTOR */
+
+#mentor-list-elementary-school,
+#mentor-list-junior-high-school,
+#mentor-list-senior-high-school,
+#mentor-list-college-preparation {
+  display: none;
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.mentor {
+  margin: 40px 0;
+  padding: 20px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.mentor:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.mentor img {
+  border-radius: 10px;
+  width: 100%;
+  max-height: 320px;
+  margin-bottom: 10px;
+}
+
+.mentor-name {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.mentor-description {
+  font-size: .7rem;
+}
+
+
+/* FOOTER */
+
+footer {
+  margin-top: 225px;
+}
+
+.footer-container {
+  padding: 0px 260px 0px 260px;
+}
+
+/* FOOTER END */
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 120px;
+}
+
+.footer-col h4 {
+  font-size: 1.4rem;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+
+.footer-col p {
+  width: 200px;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+
+.footer-logo {
+  width: 120px;
+}
+
+.footer-col ul li a,
+.footer-col ul li p {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+  display: block;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/* FOOTER END */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+
+  .nav-bar {
+    padding: 20px;
+  }
+
+  .nav-bar-btn {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: -100%;
+    background-color: var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+    padding: 0;
+  }
+
+  .menu li {
+    margin-top: 40px;
+  }
+
+  .menu li a {
+    padding: 10px;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+
+  #check:checked~.menu {
+    right: 0;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  /* MENU END */
+
+  #mentor-list-elementary-school,
+  #mentor-list-junior-high-school,
+  #mentor-list-senior-high-school,
+  #mentor-list-college-preparation,
+  .mentor-list-container {
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .mentor {
+    width: 220px;
+    height: 360px;
+  }
+
+
+  /* FOOTER */
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .footer-container {
+    padding: 20px;
+  }
+}
+
+
+
+
+
+@media (max-width: 720px) {
+  .nav-bar {
+    padding: 20px;
+  }
+
+  #mentor-list-elementary-school,
+  #mentor-list-junior-high-school,
+  #mentor-list-senior-high-school,
+  #mentor-list-college-preparation {
+    padding: 0;
+  }
+
+  .features {
+    margin: 0px;
+    padding-top: 160px;
+  }
+
+
+  /* FOOTER */
+  .footer-col {
+    width: 40%;
+    margin-bottom: 30px;
+  }
+
+  .footer-container {
+    padding: 20px;
+  }
+
+
+}

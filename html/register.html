@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Guru - Register</title>
+
+    <!-- LINK -->
+    <link rel="icon" href="../assets/cari-guru-logo-blue.svg">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="back-btn">
+            <a class="btn" href="index.html">
+                <img src="../assets/arrow-left.svg" alt="">
+                <h4>Back to Home Page</h4>
+            </a>
+        </div>
+        <div class="register_container">
+            <div class="register_frame">
+                <div class="logo">
+                    <img src="../assets/cari-guru-logo-blue.svg" alt="">
+                </div>
+                <div class="title">Sign Up</div>
+                <div class="register_option">
+                    <div class="register_menu" onclick="showMenu('mentee_form')">I'm a mentee</div>
+                    <div class="register_menu" onclick="showMenu('mentor_form')">I'm a mentor</div>
+                </div>
+                <div class="form_container" id="mentee_form">
+                    <label for="studentName">Full Name</label>
+                    <input type="text" id="studentName" name="studentName" placeholder="Full Name">
+                    <label for="studentEmail">Email</label>
+                    <input type="email" id="studentEmail" name="studentEmail" placeholder="Email">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" placeholder="Address">
+                    <label for="password">Password</label>
+                    <input type="password" name="pass" id="pass" placeholder="Password">
+                    <label for="confpass">Confirm Password</label>
+                    <input type="password" name="confpass" id="confpass" placeholder="Confirm Password">
+                    <input type="submit" value="Sign Up" class="submit_button">
+                </div>
+                <div class="form_container" id="mentor_form">
+                    <label for="studentName">Full Name</label>
+                    <input type="text" id="studentName" name="studentName" placeholder="Full Name">
+                    <label for="studentEmail">Email</label>
+                    <input type="email" id="studentEmail" name="studentEmail" placeholder="Email">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" placeholder="Address">
+                    <label for="password">Password</label>
+                    <input type="password" name="pass" id="pass" placeholder="Password">
+                    <label for="confpass">Confirm Password</label>
+                    <input type="password" name="confpass" id="confpass" placeholder="Confirm Password">
+                    <input type="submit" value="Sign Up" class="submit_button">
+                </div>
+                <div class="have_account">
+                    Have an account?
+                    <a href="/html/login.html" class="login_link">Log In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/register.js"></script>
+</body>
+
+</html>

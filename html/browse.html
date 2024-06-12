@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cari Guru - Browse All Mentor</title>
+
+  <!-- ICONS -->
+  <link rel="icon" href="../assets/cari-guru-logo-blue.svg">
+  <!-- LINK -->
+  <link rel="stylesheet" href="../css/browse.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+
+
+  <!-- FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class='nav-bar'>
+        <li class='logo'><a href='index.html'><img src='../assets/cari-guru-logo-blue.svg' /></a></li>
+        <input type='checkbox' id='check' />
+        <span class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="">Browse all mentors</a></li>
+          <span class="nav-bar-btn">
+            <li class="login"><a href="login.html"><button type="button">Login</button></a></li>
+            <li class="register"><a href="register.html"><button type="button">Register</button></a></li>
+          </span>
+          <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </span>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <section class="main">
+    <div class="main-container">
+      <!-- MAIN-LEFT -->
+      <div class="main-left">
+        <form class="filter-tag">
+          <h2 class="tagline-skill">Skills</h2>
+          <span class="find-skill">
+            <input type="text" id="find-by-skill" placeholder="Search for Skills">
+            <br>
+            <input type="checkbox" name="mathematic" id="mathematic"> <label for="mathematic">Mathematic</label>
+            <br>
+            <input type="checkbox" name="Physics" id="Physics"> <label for="Physics">Physics</label>
+            <br>
+            <input type="checkbox" name="Biology" id="Biology"> <label for="Biology">Biology</label>
+            <br>
+            <input type="checkbox" name="Computer Programming" id="Computer Programming"> <label
+              for="Computer Programming">Computer Programming</label>
+            <br>
+            <input type="checkbox" name="Sciences" id="Sciences"> <label for="Sciences">Sciences</label>
+            <br>
+            <input type="checkbox" name="Chinese Lecture" id="Chinese Lecture"> <label for="Chinese Lecture">Chinese
+              Lecture</label>
+            <br>
+            <input type="checkbox" name="Calculus" id="Calculus"> <label for="Calculus">Calculus</label>
+          </span>
+          <h2 class="tagline-location">Location</h2>
+          <span class="find-location">
+            <input type="text" id="find-by-location" placeholder="Search for Skills">
+            <br>
+            <input type="checkbox" name="Jakarta" id="Jakarta"> <label for="Jakarta">Jakarta</label>
+            <br>
+            <input type="checkbox" name="Bekasi" id="Bekasi"> <label for="Bekasi">Bekasi</label>
+            <br>
+            <input type="checkbox" name="Tangerang" id="Tangerang"> <label for="Tangerang">Tangerang</label>
+            <br>
+            <input type="checkbox" name="Bogor" id="Bogor"> <label for="Bogor">Bogor</label>
+            <br>
+            <input type="checkbox" name="Yogyakarta" id="Yogyakarta"> <label for="Yogyakarta">Yogyakarta</label>
+            <br>
+            <input type="checkbox" name="Surabaya" id="Surabaya">
+            <label for="Surabaya">Surabaya</label>
+            <br>
+            <input type="checkbox" name="Depok" id="Depok"> <label for="Depok">Depok</label>
+            <button class="filter-btn" type="submit">Filter</button>
+          </span>
+        </form>
+      </div>
+      <!-- MAIN-RIGHT -->
+      <div class="main-right">
+        <!-- MENTOR 1 -->
+        <div class="card-container">
+          <div class="photo-mentor">
+            <img src="../assets/mentor-2.jpg" alt="" srcset="">
+          </div>
+          <div class="profile-mentor">
+            <h2 class="mentor-name">Mutiara Salsabila</h2>
+            <h5 class="mentor-jobs">Elementary School Teacher in <span>Binus Bekasi School</span></h5>
+            <h5 class="mentor-experience">3 years experience in teaching Math</h5>
+            <p class="mentor-description">
+              I'm Christie Kagoya, a dedicated and passionate mathematics educator with three years of experience
+              teaching students of various ages and skill levels. I pride myself on my dynamic teaching methods and my
+              ability to make complex concepts accessible. Over the years, I've had the privilege of helping countless
+              students achieve their academic goals and develop a genuine love for mathematics.
+            </p>
+            <div class="skill-tag">
+              <div class="tag-list">
+                <h4 id="Mathematic">Linear Algebra</h4>
+              </div>
+              <div class="tag-list">
+                <h4 id="Mathematic">Calculus</h4>
+              </div>
+            </div>
+            <div class="mentor-prices">
+              <h2>$5 / <span>hour</span></h2>
+              <a href="./forum.html"><button type="button">View Mentor</button></a>
+            </div>
+          </div>
+        </div>
+        <!-- MENTOR 2 -->
+        <div class="card-container">
+          <div class="photo-mentor">
+            <img src="../assets/mentor-6.jpg" alt="" srcset="">
+          </div>
+          <div class="profile-mentor">
+            <h2 class="mentor-name">Christie Kagoya</h2>
+            <h5 class="mentor-jobs">Elementary School Teacher in <span>Binus Bekasi School</span></h5>
+            <h5 class="mentor-experience">3 years experience in teaching Math</h5>
+            <p class="mentor-description">
+              I'm Christie Kagoya, a dedicated and passionate mathematics educator with three years of experience
+              teaching students of various ages and skill levels. I pride myself on my dynamic teaching methods and my
+              ability to make complex concepts accessible. Over the years, I've had the privilege of helping countless
+              students achieve their academic goals and develop a genuine love for mathematics.
+            </p>
+            <div class="skill-tag">
+              <div class="tag-list">
+                <h4 id="Mathematic">Linear Algebra</h4>
+              </div>
+              <div class="tag-list">
+                <h4 id="Mathematic">Calculus</h4>
+              </div>
+            </div>
+            <div class="mentor-prices">
+              <h2>$5 / <span>hour</span></h2>
+              <a href=""><button type="button">View Mentor</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class=" footer">
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <img class="footer-logo" src="../assets/cari-guru-logo-white.svg" alt="" srcset="">
+          <ul>
+            <li>
+              <p>
+                Your trusted source to find highly vetted tutors and educational professionals to boost your
+                academic
+                success.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="#">Elementary School</a></li>
+            <li><a href="#">Junior High School</a></li>
+            <li><a href="#">Senior High School</a></li>
+            <li><a href="#">Collage Preparation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Mentors</h4>
+          <ul>
+            <li><a href="#">View All mentor</a></li>
+            <li><a href="#">Become a Mentor</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact us</h4>
+          <ul>
+            <li><a href="#">info@cariguru.com</a></li>
+            <li><a href="#">081329130520</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+</body>
