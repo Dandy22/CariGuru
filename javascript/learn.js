@@ -49,3 +49,21 @@ document.addEventListener("DOMContentLoaded", function () {
     activeElement = elementaryList;
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const featureButtons = document.querySelectorAll('.features-list button');
+
+  featureButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const isAlreadyClicked = this.classList.contains('clicked');
+
+      // Hapus kelas 'clicked' dari semua tombol
+      featureButtons.forEach(btn => btn.classList.remove('clicked'));
+
+      // Toggle kelas 'clicked' pada tombol yang diklik
+      if (!isAlreadyClicked) {
+        this.classList.add('clicked');
+      }
+    });
+  });
+});
