@@ -18,11 +18,14 @@ body {
 }
 
 .container {
-    display: flex;
+    flex-direction: row;
     flex-direction: column;
+
     padding: 60px 10%;
     gap: 40px;
 }
+
+
 
 .btn {
     display: flex;
