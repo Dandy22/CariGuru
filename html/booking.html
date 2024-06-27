@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cari Guru - Learn</title>
+
+  <!-- ICONS -->
+  <link rel="icon" href="../assets/cari-guru-logo-blue.svg">
+  <!-- LINK -->
+  <link rel="stylesheet" href="../css/booking.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+
+  <!-- FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class='nav-bar'>
+        <li class='logo'><a href='index.html'><img src='../assets/cari-guru-logo-blue.svg' /></a></li>
+        <input type='checkbox' id='check' />
+        <span class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="browse.html">Browse all mentors</a></li>
+          <span class="nav-bar-btn">
+            <li class="login"><a href="login.html"><button type="button">Login</button></a></li>
+            <li class="register"><a href="register.html"><button type="button">Register</button></a></li>
+          </span>
+          <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </span>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="plan">
+    <div class="plan-section">
+      <div class="back-btn">
+        <a class="btn" href="../html/forum.html">
+          <img src="../assets/arrow-left-blue.svg" alt="">
+          <h4>Back to Mentor Page</h4>
+        </a>
+      </div>
+      <div class="plan-profile">
+        <div class="img"></div>
+        <div class="profile-tagline">
+          <h1>Mentorship Plan</h1>
+
+          <h2>Mutiara Salsabila</h2>
+          <h4>Elementary School at <span>Binus School Bekasi</span></h4>
+        </div>
+
+      </div>
+      <div class="plan-container">
+        <form class="mentor-plan-form" action="">
+          <div class="left-section">
+            <div class="benefit">
+              <div class="card-description">
+                <h2>Benefit</h2>
+                <div class="card-list">
+                  <img src="../assets/forum-1.svg" alt="" srcset="">
+                  <label for="">Personalized Learning Plan</label>
+                </div>
+                <div class="card-list">
+                  <img src="../assets/forum-2.svg" alt="" srcset="">
+                  <label for="">One-on-One session</label>
+                </div class="card-list">
+                <div class="card-list">
+                  <img src="../assets/forum-3.svg" alt="">
+                  <label for="">Interactive Lesson</label>
+                </div>
+              </div>
+            </div>
+            <h2>Choose Plan</h2>
+            <label for="">Start Mentoring Plan Date</label>
+            <br>
+            <input type="date" name="" id="date">
+            <br>
+            <label for="">End Mentoring Plan Date</label>
+            <br>
+            <input type="date" name="" id="date">
+            <h2>Choose Location</h2>
+            <div id="map">
+            </div>
+          </div>
+          <div class="right-section">
+            <div class="payment-method">
+              <h2>Payment Method</h2>
+              <div class="payment-plan">
+                <label class="payment-plan-list" for="Visa">
+                  <div class="payment">
+                    <input type="radio" name="payment-plan" id="Visa">
+                    <div class="payment-info">
+                      <p>**** 732</p>
+                      <p>Visa Card</p>
+                    </div>
+                  </div>
+                  <img src="../assets/Visa_Logo.png" alt="" srcset="">
+                </label>
+                <label class="payment-plan-list" for="MasterCard">
+                  <div class="payment">
+                    <input type="radio" name="payment-plan" id="MasterCard">
+                    <div class="payment-info">
+                      <p>**** 321</p>
+                      <p>MasterCard Card</p>
+                    </div>
+                  </div>
+                  <img src="../assets/MasterCard_Logo.svg.png" alt="" srcset="">
+                </label>
+              </div>
+              <button class="add-payment" value="none">Add New Payment</button>
+            </div>
+            <div class="discount-container">
+              <h2>Discount Code</h2>
+              <input type="text" name="" id=""><button>Apply</button>
+              <div class="price-container">
+                <div class="price-1">
+                  <h4>One Session Mentoring</h4>
+                  <h5>$5</h5>
+                </div>
+                <div class="total">
+                  <h4>Total</h4>
+                  <h1>$5</h1>
+                </div>
+              </div>
+            </div>
+            <input class="pay-now" type="submit" value="Pay Now">
+          </div>
+      </div>
+
+      </form>
+    </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <img class="footer-logo" src="../assets/cari-guru-logo-white.svg" alt="" srcset="">
+          <ul>
+            <li>
+              <p>
+                Your trusted source to find highly vetted tutors and educational professionals to boost your academic
+                success.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="#">Elementary School</a></li>
+            <li><a href="#">Junior High School</a></li>
+            <li><a href="#">Senior High School</a></li>
+            <li><a href="#">Collage Preparation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Mentors</h4>
+          <ul>
+            <li><a href="#">View All mentor</a></li>
+            <li><a href="#">Become a Mentor</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact us</h4>
+          <ul>
+            <li><a href="#">info@cariguru.com</a></li>
+            <li><a href="#">081329130520</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <script src="../javascript/booking.js"></script>
+</body>
